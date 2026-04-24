@@ -6,9 +6,14 @@
     <script language="JScript">
         <![CDATA[
             var shell = new ActiveXObject("WScript.Shell");
-            // 64 = Information Icon, "Security Alert" = Title
-            shell.Popup("DFIR Challenge: In-Memory Execution Detected.", 0, "Security Alert", 64);
+            shell.Popup("CRITICAL: Forensic Challenge Active", 0, "System Alert", 48);
         ]]>
     </script>
 </registration>
+<script language="JScript">
+    <![CDATA[
+        var shell = new ActiveXObject("WScript.Shell");
+        shell.Popup("CRITICAL: Forensic Challenge Active", 0, "System Alert", 48);
+    ]]>
+</script>
 </scriptlet>

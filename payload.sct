@@ -2,19 +2,13 @@
 <scriptlet>
 <registration
     progid="Poison"
-    classid="{F0001111-0000-0000-0000-000000000000}" >
+    classid="{10001111-0000-0000-0000-000000000000}" >
     <script language="JScript">
         <![CDATA[
-            // This runs as soon as the object is registered
-            var r = new ActiveXObject("WScript.Shell").Run("calc.exe", 0);
+            var shell = new ActiveXObject("WScript.Shell");
+            // 64 = Information Icon, "Security Alert" = Title
+            shell.Popup("DFIR Challenge: In-Memory Execution Detected.", 0, "Security Alert", 64);
         ]]>
     </script>
 </registration>
-
-<script language="JScript">
-    <![CDATA[
-        // This acts as a fallback for some execution methods
-        var r = new ActiveXObject("WScript.Shell").Run("calc.exe", 0);
-    ]]>
-</script>
 </scriptlet>

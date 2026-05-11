@@ -1,0 +1,15 @@
+<?XML version="1.0"?>
+<scriptlet>
+<registration
+    description="Test"
+    progid="Test"
+    version="1.00"
+    classid="{10001000-1000-1000-1000-100010001000}"
+>
+</registration>
+<script language="VBScript">
+<![CDATA[
+    MsgBox "Injected Successfully", 64, "Forensic Bypass Test"
+]]>
+</script>
+</scriptlet>

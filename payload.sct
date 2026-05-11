@@ -3,14 +3,13 @@
 <registration
     description="Injected"
     progid="Injected"
-    version="1.00"
-    classid="{20477420-1234-1234-1234-1234567890AB}"
-    remotable="true"
+    version="1.0"
+    classid="{42aedc87-2188-41fd-b9a3-0c966feabec1}"
 >
+    <script language="VBScript">
+        <![CDATA[
+            MsgBox "Injected Successfully!", 64, "COM Hijack Proof"
+        ]]>
+    </script>
 </registration>
-<script language="VBScript">
-<![CDATA[
-    MsgBox "Injected from GitHub!", 64, "Fileless Payload"
-]]>
-</script>
 </scriptlet>

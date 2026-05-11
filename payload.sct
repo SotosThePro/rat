@@ -1,15 +1,16 @@
 <?XML version="1.0"?>
 <scriptlet>
 <registration
-    description="Test"
-    progid="Test"
+    description="Injected"
+    progid="Injected"
     version="1.00"
-    classid="{10001000-1000-1000-1000-100010001000}"
+    classid="{20477420-1234-1234-1234-1234567890AB}"
+    remotable="true"
 >
 </registration>
 <script language="VBScript">
 <![CDATA[
-    MsgBox "Injected Successfully", 64, "Forensic Bypass Test"
+    MsgBox "Injected from GitHub!", 64, "Fileless Payload"
 ]]>
 </script>
 </scriptlet>

@@ -8,7 +8,7 @@
 >
     <script language="VBScript">
         <![CDATA[
-            MsgBox "Injected Successfully!", 64, "COM Hijack Proof"
+            MsgBox "Injected Successfully!", 64, "Fileless Persistence"
         ]]>
     </script>
 </registration>
